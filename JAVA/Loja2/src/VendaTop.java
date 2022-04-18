@@ -8,7 +8,7 @@ public class VendaTop {
 		double v_desc;
 		int control = 0;
 		
-		System.out.println("Bem-vindo a Ratinho Marketplace!");
+		System.out.println("Bem-vindo ao Ratinho Marketplace!");
 		System.out.println("________________________________");
 		System.out.println("Selecione os produtos que deseja comprar:");
 		System.out.println("1. Calçolas - R$20.00");

@@ -18,7 +18,6 @@ public class Aplicacao {
 			System.out.println("Para calcular a área do quadrado, insira a medida de qualquer um de seus lados: ");
 			x = Integer.parseInt(entrada.nextLine());
 			
-			double 
 			System.out.println("A área do quadrado é");
 		
 		

@@ -12,7 +12,7 @@ public class Aplicacao {
 		System.out.println("O resultado da soma é: " + soma + ".");
 		
 		double soma2 = matematica.somar(3.5, 4);
-		System.out.println("O resultado da soma é");
+		System.out.println("O resultado da soma é ");
 
 	}
 

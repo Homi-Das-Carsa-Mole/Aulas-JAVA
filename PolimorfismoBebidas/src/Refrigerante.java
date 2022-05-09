@@ -14,5 +14,4 @@ public class Refrigerante extends Bebida {
 		System.out.println("Colocando refrigerante");
 	}
 	
-	
 }

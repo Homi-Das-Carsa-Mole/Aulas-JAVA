@@ -144,24 +144,74 @@ public class Main {
 //			} while (x < 10);
 			//Já no "do while", é primeiro executado o código e depois feito o teste condicional. Enquanto o valor do teste condicional atender a condição estipulada, o código será  executado.
 			
-			for(int x=0; x <= 10; x++) { // (valor inicial; teste condicional; incremento)
-				System.out.printf("2 x %d = %d%n", x, 2 * x);
-			}
+//			for(int x=0; x <= 10; x++) { // (valor inicial; teste condicional; incremento)
+//				System.out.printf("2 x %d = %d%n", x, 2 * x);
+//			}
 			
 			//ou
 			
-			for(int x = 0; x <= 10; x++)
-				System.out.println("2 x " + x + " = " + 2 * x);
+//			for(int x = 0; x <= 10; x++)
+//				System.out.println("2 x " + x + " = " + 2 * x);
+//			
+//			//Com inserção de número
+//				
+//			Scanner entrada = new Scanner (System.in);
+//			System.out.println("Insira um número:");
+//			int y = entrada.nextInt();
+//			
+//			for(int x = 0; x <= 10; x++) {
+//				System.out.println(y + " x " + x + " = " + x*y);
+//			}
 			
-			//Com inserção de número
-				
-			Scanner entrada = new Scanner (System.in);
-			System.out.println("Insira um número:");
-			int y = entrada.nextInt();
+//			int x1 = 3;
+//			int y1 = 5;
+//			int z1 = 7;
+//			
+//			System.out.println(x1);
+//			System.out.println(y1);
+//			System.out.println(z1);
+//			System.out.println(); //Nesse caso, foi necessário criar um SYSO para a exibição do valor de cada uma das variáveis. 
+//			
+			double x[] = {3.5, 5, 3, 5}; //As arrays, ou matrizes, permitem que sejam atribuídos diversos valores para uma mesma variável. As arrays são construídas através do uso
+			//de colchetes.
 			
-			for(int x = 0; x <= 10; x++) {
-				System.out.println(y + " x " + x + " = " + x*y);
+			for (int aux = 0; aux < x.length; aux++) { //Criamos um laço de repetição onde o número inicial do índice, representado pela variável aux, é 0.
+//			O índice será incrementado, recebendo +1, enquanto o valor do índice (aux) for menor que o número de posições total da matriz que criamos.
+//			A cada repetição será executado o código abaixo, que exibe o valor inserido em cada posição/índice da matriz.
+				System.out.println("Valor do índice " + aux + " = " + x[aux]);
 			}
+			
+			String nome[] = {"Misael", "Neide", "Milton", "Gabriel"};
+			
+			for (int aux1 = 0; aux1 < nome.length; aux1++) {
+				System.out.println(nome[aux1]);
+				if (nome[aux1] == "Gabriel") {
+					System.out.println("O índice do nome Gabriel é " + aux1);
+				}
+			}
+			
+			//É possível criar matrizes vazias, sem contéudo algum. Exemplo de como fazer:
+			
+			int[] arrayInt = new int[5]; //Aqui, construímos uma array do tipo inteiro. Ela terá 5 posições que poderão, futuramente, ser ocupadas com valores inteiros. No entanto,
+			//no momento de criação, elas estão vazias. O mesmo se dá com as matrizes abaixo.
+			String[] arrayString = new String[4];
+			double[] arrayDouble = new double[3];
+			
+			arrayInt[3] = 4; //Estamos atribuindo o valor 4 para a posição 3 da matriz.
+			
+			int[] numero = new int[6];
+			Scanner teclado = new Scanner(System.in);
+			
+			for (int aux2 = 0; aux2 < numero.length; aux2++) {
+				System.out.println("Digite um número qualquer");
+				numero[aux2] = teclado.nextInt();
+			}
+			for (int aux2 = 0; aux2 < numero.length; aux2++) {
+				System.out.println("O índice do número " + numero[aux2] + " é igual a " + aux2);
+			}
+			
+			
+			
 			
 			
 	}

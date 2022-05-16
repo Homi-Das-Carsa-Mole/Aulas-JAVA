@@ -1,6 +1,6 @@
 
 public abstract class ContaBancaria {
-	protected static double saldo = 100;
+	protected static double saldo;
 	
 	public void depositar(double deposito) {
 		this.saldo += deposito;
@@ -14,8 +14,6 @@ public abstract class ContaBancaria {
 		conta.saldo += transferencia;
 	}
 	
-	public void calcularSaldo() {
-		
-	}
+	public abstract double calcularSaldo();
 
 }

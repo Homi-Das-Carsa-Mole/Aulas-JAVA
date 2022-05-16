@@ -2,11 +2,8 @@
 public class ContaCorrente extends ContaBancaria {
 	private double saldo = ContaBancaria.saldo;
 	
-	
-	
-	@Override
-	public void calcularSaldo() {
-		
+	public double calcularSaldo() {
+		return saldo -= (saldo * 0.10); 
 	}
 	
 

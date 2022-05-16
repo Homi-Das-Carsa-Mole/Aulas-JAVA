@@ -2,11 +2,9 @@
 public class ContaInvestimento extends ContaBancaria {
 	private double saldo;
 	
-	
-	
 	@Override
-	public void calcularSaldo() {
-		
+	public double calcularSaldo() {
+		return saldo += (saldo * 0.05);
 	}
 	
 }

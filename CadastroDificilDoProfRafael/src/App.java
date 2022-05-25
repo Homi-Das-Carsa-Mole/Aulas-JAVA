@@ -27,16 +27,16 @@ public class App {
 			
 			if(x == 1) {
 				pessoa.setSexo(Sexo.MASCULINO);
-			} if (x == 2) {
+			} else if (x == 2) {
 				pessoa.setSexo(Sexo.FEMININO);
 			} else {
-				System.out.println("Valor inválido");
+				System.out.println("Valor invÃ¡lido");
 			}
 			
-			System.out.println("Digite o nome da rua onde você mora:");
+			System.out.println("Digite o nome da rua onde vocÃª mora:");
 			pessoa.getEndereco().setRua(entrada.next());;
 			
-			System.out.println("Digite o número da sua residência:");
+			System.out.println("Digite o nÃºmero da sua residÃªncia:");
 			pessoa.getEndereco().setNum(entrada.nextInt());
 			
 			System.out.println("Digite o nome do seu bairro:");
@@ -53,8 +53,8 @@ public class App {
 		}
 		
 		
-		//Buffer: memória temporária que recebe informações que ficam em espera para depois serem processadas.
-		//Buffered é uma interface
+		//Buffer: memÃ³ria temporÃ¡ria que recebe informaÃ§Ãµes que ficam em espera para depois serem processadas.
+		//Buffered Ã© uma interface
 		
 
 	}

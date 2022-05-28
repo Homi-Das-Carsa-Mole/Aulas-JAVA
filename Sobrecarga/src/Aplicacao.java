@@ -12,7 +12,7 @@ public class Aplicacao {
 		System.out.println("O resultado da soma é: " + soma + ".");
 				
 		soma = matematica.somar(3, 4, 5); //Aqui, a varíavel "soma" guardará o valor da soma de três valores inteiros,
-		//soma essa feita pelo mesmo método "somar".
+		//soma essa feita pelo mesmo método "somar"
 		System.out.println("O resultado da soma é: " + soma + ".");
 		
 		double soma2 = matematica.somar(3.5, 4); //Visto que o método "somar" agora trabalha valor em double, foi necessário

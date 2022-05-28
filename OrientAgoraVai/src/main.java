@@ -3,7 +3,7 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		//Instanciando/Criando uma variável que recebe o nome "pessoa1" e que é do tipo/da classe Pessoa:
+		//Criando uma variável do tipo Pessoa que recebe o nome "pessoa1" e a instanciando como um objeto.
 		Pessoa pessoa1 = new Pessoa();
 		
 		//Setando o nome e a quantidade de figurinhas de pessoa1:

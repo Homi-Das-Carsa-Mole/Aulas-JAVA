@@ -6,21 +6,21 @@ public class Aplicacao {
 		int forma;
 		double  x, y;
 		
-		System.out.println("Você deseja calcular a área de qual forma geométrica?");
-		System.out.println("1. Quadrado");
-		System.out.println("2. Triângulo");
-		System.out.println("3. Retângulo");
-		
 		Scanner entrada = new Scanner(System.in);
 		forma = entrada.nextInt();
 		
-		if(forma == 1);
-			System.out.println("Para calcular a área do quadrado, insira a medida de qualquer um de seus lados: ");
-			x = Integer.parseInt(entrada.nextLine());
+		System.out.println("VocÃª deseja calcular a Ã¡rea de qual forma geomÃ©trica?");
+		System.out.println("1. Quadrado");
+		System.out.println("2. TriÃ¢ngulo");
+		System.out.println("3. RetÃ¢ngulo");
+		
+		if(forma == 1) {
+			System.out.println("Para calcular a Ã¡rea do quadrado, insira a medida de qualquer um de seus lados: ");
+			x = 
 			
-			System.out.println("A área do quadrado é");
+			System.out.println("A Ã¡rea do quadrado Ã©");
 		
-		
+		}
 		
 		
 		

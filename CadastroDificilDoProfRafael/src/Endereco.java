@@ -22,6 +22,16 @@ public class Endereco {
 		this.num = num;
 	}
 	
+	public Endereco(String rua, String bairro, int num) {
+		super();
+		this.rua = rua;
+		this.bairro = bairro;
+		this.num = num;
+	}
+	public Endereco() {
+
+	}
+	
 	
 	
 }

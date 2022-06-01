@@ -1,0 +1,10 @@
+Nome: L,Idade: 2
+ Sexo: FEMININO
+ Rua: L
+ Número: 5
+ Bairro: L
+Nome: L,Idade: 5
+ Sexo: FEMININO
+ Rua: L
+ Número: 20
+ Bairro: L

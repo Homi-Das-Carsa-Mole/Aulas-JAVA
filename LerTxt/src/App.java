@@ -9,6 +9,7 @@ public class App {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		//Buffered: classe responsavel por escrever algo numa memoria temporaria
 		
+		
 		try(BufferedReader reader = new BufferedReader(new FileReader("entrada.txt"))) {
 			String line;
 			String string = "";

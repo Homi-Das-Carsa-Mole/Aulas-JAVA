@@ -56,7 +56,8 @@ public class Main {
 //					break;
 //				}
 //					
-//				//O break impede que o restante do cÃ³digo dentro do switch seja executado. Quando utilizado, ele sai do switch.
+//				//O break impede que o restante do cÃ³digo dentro do switch seja executado.
+				//Quando utilizado, ele sai do switch.
 //					
 //				int num2 = 5;
 //				

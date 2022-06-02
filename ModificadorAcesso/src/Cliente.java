@@ -10,6 +10,7 @@ public class Cliente { //Declaração dos atributos da classe Cliente
 	//O método "get" nos permite, como o próprio sugere, *pegar*/visualizar uma informação.
 	//Já o método "set" possibilita a *definição*/modificação do conteúdo de determinado atributo/variável.	
 	
+	//Construtor de um objeto da classe Cliente:
 	public Cliente() {
 		
 	}
@@ -59,6 +60,7 @@ public class Cliente { //Declaração dos atributos da classe Cliente
 	}
 
 	@Override
+	//Método Equals: serve para comparar objetos e verificar se eles são iguais.
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;

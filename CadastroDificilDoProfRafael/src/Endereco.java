@@ -22,7 +22,7 @@ public class Endereco {
 		this.num = num;
 	}
 	
-	public Endereco(String rua, String bairro, int num) {
+	public Endereco(String rua, int num, String bairro) {
 		super();
 		this.rua = rua;
 		this.bairro = bairro;

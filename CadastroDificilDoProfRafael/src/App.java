@@ -17,7 +17,7 @@ public class App {
 
 		Scanner entrada = new Scanner(System.in);
 
-		for (int x = 0; x < 2; x++) {
+		for (int x = 0; x < 1; x++) {
 
 			Pessoa pessoa = new Pessoa();
 			pessoa.setEndereco(new Endereco());
@@ -38,16 +38,16 @@ public class App {
 				} else if (option == 2) {
 					pessoa.setSexo(Sexo.FEMININO);
 				} else {
-					System.out.println("Valor inválido");
+					System.out.println("Valor invÃ¡lido");
 					System.out.println("Digite seu sexo: \nDigite 1 para MASCULINO \nDigite 2 para FEMININO");
 				}
 
 			}
 
-			System.out.println("Digite o nome da rua onde você mora:");
+			System.out.println("Digite o nome da rua onde vocÃª mora:");
 			pessoa.getEndereco().setRua(entrada.next());
 
-			System.out.println("Digite o número da sua residência:");
+			System.out.println("Digite o nÃºmero da sua residÃªncia:");
 			pessoa.getEndereco().setNum(entrada.nextInt());
 
 			System.out.println("Digite o nome do seu bairro:");
@@ -58,8 +58,9 @@ public class App {
 		}
 
 		for (Pessoa p : listaDePessoas) {
-			System.out.print("");
+			System.out.println("Cadastros:");
 			System.out.println(p);
+			System.out.println("");
 
 		}
 
@@ -84,7 +85,7 @@ public class App {
 		}
 
 		for (Pessoa pessoa : listaDePessoas2) {
-			System.out.print("");
+			System.out.println("Cadastros lidos do TXT:");
 			System.out.println(pessoa);
 
 		}
@@ -94,5 +95,7 @@ public class App {
 		// Buffered e uma interface
 
 	}
+	
+	
 
 }

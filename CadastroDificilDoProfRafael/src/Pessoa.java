@@ -40,9 +40,9 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return "Nome: " + nome + ",Idade: " + idade + "\n Sexo: " + getSexo() +
-				"\n Rua: " + endereco.getRua() + "\n Número: " + endereco.getNum() + 
-				"\n Bairro: " + endereco.getBairro() + "\n";
+		return "Nome: " + nome + ", Idade: " + idade + ", Sexo: " + getSexo() +
+				", Rua: " + endereco.getRua() + ", NÃºmero: " + endereco.getNum() + 
+				", Bairro: " + endereco.getBairro();
 	}
 	
 	public Pessoa(String texto) {
@@ -57,19 +57,19 @@ public class Pessoa {
 		this.idade = Integer.parseInt(arrayAux3[1].trim());
 		
 		String[] arrayAux4 = arrayAux1[2].split(":");
-		this.sexo = Sexo.valueOf(arrayAux4[1]);
+		this.sexo = Sexo.valueOf(arrayAux4[1].trim());
 		
 		String[] arrayAux5 = arrayAux1[3].split(":");
 		rua = arrayAux5[1].trim();
-		this.endereco = new Endereco(rua, bairro, num);
+		this.endereco = new Endereco(rua, num, bairro);
 		
 		String[] arrayAux6 = arrayAux1[4].split(":");
-		bairro = arrayAux6[1].trim();
-		this.endereco = new Endereco(rua, bairro, num);
+		num = Integer.parseInt(arrayAux6[1].trim());
+		this.endereco = new Endereco(rua, num, bairro);
 		
 		String[] arrayAux7 = arrayAux1[5].split(":");
-		num = Integer.parseInt(arrayAux7[1].trim());
-		this.endereco = new Endereco(rua, bairro, num);
+		bairro = arrayAux7[1].trim();
+		this.endereco = new Endereco(rua, num, bairro);
 		
 		
 	}

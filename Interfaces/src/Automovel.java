@@ -1,9 +1,11 @@
 
 public interface Automovel {
-	//Interface: intermedÌario. Exemplo: um DVD tem uma interface padr„o, com botıes de play, pause, avanÁar, voltar, etc. Quando apertamos esses botıes, n„o nos preocupamos com o que acontece internamente no DVD
-		//Na interface n„o existem cÛdigo algum. Nela ser„o implementados os mÈtodos de outra classe.
-		//Uma mesma classe pode ter v·rias interfaces.
-		//Assim como na classe abstrata, quando uma classe se conecta a uma interface, È preciso implementar na classe os mÈtodos e atributos da interface.
+	
+	//Interface: intermed√≠ario. Exemplo: um DVD tem uma interface padr√£o, com bot√µes de play, pause, avan√ßar, voltar, etc. Quando apertamos esses bot√µes, n√£o nos preocupamos com o que acontece internamente no DVD
+	//Na interface n√£o se elabora c√≥digo algum. Nela ser√£o inseridos apenas a assinatura dos m√©todos que as classes que a implementarem far√£o uso.
+	//Para que uma classe fa√ßa uso de uma interface, √© preciso explicitar que desejamos implementar na classe em quest√£o a interface desejada.
+	//Uma mesma classe pode ter v√°rias interfaces.
+	//Assim como na classe abstrata, quando uma classe se conecta a uma interface, √© preciso implementar na classe os m√©todos e atributos da interface.
 	
 	void virarEsquerda();
 	void virarDireita();

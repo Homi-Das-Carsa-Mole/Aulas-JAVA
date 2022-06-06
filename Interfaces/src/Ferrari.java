@@ -1,5 +1,6 @@
 
-public class Ferrari implements Automovel, ItemCaro {
+public class Ferrari implements Automovel, ItemCaro { //Por usar "implements", estamos como que conectando uma interface à uma classe. A partir de agora, todos os objetos da
+	//classe Ferrari terão acesso aos métodos que definimos na interface "Automovel".
 
 	@Override
 	public void virarEsquerda() {

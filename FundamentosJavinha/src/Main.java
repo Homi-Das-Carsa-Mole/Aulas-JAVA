@@ -13,9 +13,11 @@ public class Main {
 		short z = (int) 10000;
 		System.out.println(z);
 		
-		a = (int) y; //Casting Explícito: É necessÃ¡rio deixar explÃ­cito que se deseja passar o conteÃºdo da variÃ¡vel para outro tipo que nÃ£o a suporta
-		//completamente (assume-se a responsabilidade da perca de dados).
-		b = x; //Casting ImplÃ­cito: Ã© possÃ­vel passar o conteÃºdo de uma variÃ¡vel para outra.
+		a = (int) y; //Exemplo de Casting Explícito. Nesse tipo de Casting é necessário deixar explícito que se deseja passar o conteúdo da variável
+		//de um tipo de capacidade de armazenamento maior, no caso uma variável do tipo "double", para outro tipo que não a comporta/suporta completamente,
+		que nesse caso é a variável "a" do tipo "int". No Casting Explícito assume-se a responsabilidade da perca de dados.
+		b = x; //Exemplo de Casting Implícito. Nesse tipo de Casting ocorre, de forma implícita a conversão do valor de uma variável de um tipo capacidade
+		//de armazenamento menor para outra variável de capacidade maior.
 		
 		System.out.println(x);
 		System.out.println(y);
@@ -23,58 +25,64 @@ public class Main {
 		System.out.println(b);
 		
 		int idadePessoa = 70;
-		if (idadePessoa < 18) {
-			System.out.println("VocÃª nÃ£o pode beber.");
+		
+		//Teste condicional IF. O "if" (se) nos permite definir uma condição e, *se* ela for atendida, uma linha de códigos será executada.
+		if (idadePessoa < 18) { //Se uma pessoa tiver menos que 18 anos de idade, será exibida uma mensagem dizendo que ela ainda não pode ingerir
+		//bebidas alcoólicas.
+			System.out.println("Você não pode beber.");
+		} //Se queremos adicionar um novo teste condicional, pode-se fazer uso do "else if", também conhecido como "senão se".
+		else if (idadePessoa < 60) { //Agora determinamos que pessoas com menos de 60 anos podem fazer ingestão de bebidas alcoólicas. Ao mesmo tempo,
+		//por conta do teste condicional anterior, apenas aqueles com idade entre 18 e 60 anos estão habilitados pela lei para beber álcool. 
+			System.out.println("Você pode beber à vontade, meu camaradis da cachacis.");
 		}
-		else if (idadePessoa < 60) {
-			System.out.println("VocÃª pode beber Ã  vontade, meu camaradis da cachacis.");
-		}
-		else {
+		else { //O "else" (senão) tem como função executar outra linha de comando se nenhuma das outras condições definidas anteriormente for atendida.
+		//Nesse caso, o "else" determina que aqueles que tiverem de 60 anos para cima precisam voltar para o asilo.
 			System.out.println("Volta pro asilo.");
 		}
 		
-			System.out.println("VocÃª tem " + idadePessoa + " anos.");
+			System.out.println("Você tem " + idadePessoa + " anos.");
 		*/
 			
 //			int num = 1;
 //			
+			
 //			switch (num) {
 //				case 1:
-//					System.out.println("O seu nÃºmero Ã© " + num + ".");
+//					System.out.println("O seu número é " + num + ".");
 //					break;
 //				case 2:
-//					System.out.println("O seu nÃºmero Ã© " + num + ".");
+//					System.out.println("O seu número é " + num + ".");
 //					break;
 //				case 3:
-//					System.out.println("O seu nÃºmero Ã© " + num + ".");
+//					System.out.println("O seu número é " + num + ".");
 //					break;
 //				case 4:
-//					System.out.println("O seu nÃºmero Ã© " + num + ".");
+//					System.out.println("O seu número é " + num + ".");
 //					break;
 //				case 5:
-//					System.out.println("O seu nÃºmero Ã© " + num + ".");
+//					System.out.println("O seu número é " + num + ".");
 //					break;
 //				}
 //					
-//				//O break impede que o restante do cÃ³digo dentro do switch seja executado.
+//				//O break impede que o restante do código dentro do switch seja executado.
 				//Quando utilizado, ele sai do switch.
 //					
 //				int num2 = 5;
 //				
 //				switch (num) {
 //					case 1:
-//						System.out.println("O seu nÃºmero Ã© " + num2 + ".");
+//						System.out.println("O seu número é " + num2 + ".");
 //					case 2:
-//						System.out.println("O seu nÃºmero Ã© " + num2 + ".");
+//						System.out.println("O seu número é " + num2 + ".");
 //					case 3:
-//						System.out.println("O seu nÃºmero Ã© " + num2 + ".");
+//						System.out.println("O seu número é " + num2 + ".");
 //					case 4:
-//						System.out.println("O seu nÃºmero Ã© " + num2 + ".");
+//						System.out.println("O seu número é " + num2 + ".");
 //					case 5:
-//						System.out.println("O seu nÃºmero Ã© " + num2 + ".");
+//						System.out.println("O seu número é " + num2 + ".");
 //				}
 					
-				//Sem o break, ocorrerÃ¡ uma repetiÃ§Ã£o do cÃ³digo. Apesar disso, nÃ£o utilizar o break tambÃ©m pode ser Ãºtil em alguns casos.
+				//Sem o break, ocorrerá uma repetição do código. Apesar disso, não utilizar o break também pode ser útil em alguns casos.
 				
 //				int num3 = 8;
 //				switch (num3) {
@@ -85,7 +93,7 @@ public class Main {
 //						System.out.println("Segunda");
 //						break;
 //					case 3:
-//						System.out.println("TerÃ§a");
+//						System.out.println("Terça");
 //						break;
 //					case 4:
 //						System.out.println("Quarta");
@@ -97,23 +105,23 @@ public class Main {
 //						System.out.println("Sexta");
 //						break;
 //					case 7:
-//						System.out.println("SÃ¡bado");
+//						System.out.println("Sábado");
 //						break;
 //					default:
-//						System.out.println("Esse nÃºmero nÃ£o representa um dia da semana.");
+//						System.out.println("Esse número não representa um dia da semana.");
 //			}
 				
 //			char caractere = 'a';
 //			
 //			switch(caractere) {
 //				case 'a':
-//					System.out.println("O seu caractere Ã© " + caractere + ".");
+//					System.out.println("O seu caractere é " + caractere + ".");
 //					break;
 //				case 'b':
-//					System.out.println("O seu caractere Ã© " + caractere + ".");
+//					System.out.println("O seu caractere é " + caractere + ".");
 //					break;
 //				default:
-//					System.out.println("Valor invÃ¡lido.");
+//					System.out.println("Valor inválido.");
 //			}
 			
 //			String farol = "verde";
@@ -123,13 +131,13 @@ public class Main {
 //					System.out.println("SIGA.");
 //					break;
 //				case "amarelo":
-//					System.out.println("ATENÃ‡ÃƒO.");
+//					System.out.println("ATENÇÃO.");
 //					break;
 //				case "vermelho":
 //					System.out.println("PARE.");
 //					break;
 //				default:
-//					System.out.println("Valor invÃ¡lido.");
+//					System.out.println("Valor inválido.");
 //			}
 		
 //			x = 0;
@@ -137,16 +145,15 @@ public class Main {
 //				x = x + 1; // x++
 //				System.out.println(x);
 //			} 
-			//Neste caso, Ã© primeiro feito o teste condicional. Enquanto o teste condicional for verdadeiro, o cÃ³digo dentro do while serÃ¡
-			//executado.
+			//Neste caso, é primeiro feito o teste condicional. Enquanto o teste condicional for verdadeiro, o código dentro do while será executado.
 			
 //			x = 0;
 //			do {
 //				System.out.println(x);
 //				x = x + 1;
 //			} while (x < 10);
-			//JÃ¡ no "do while", Ã© primeiro executado o cÃ³digo e depois feito o teste condicional. Enquanto o valor do teste condicional atender
-			//a condiÃ§Ã£o estipulada, o cÃ³digo serÃ¡  executado.
+			//Já no "do while", é primeiro executado o código e depois feito o teste condicional. Enquanto o valor do teste condicional atender
+			//à condição estipulada, o código será executado.
 			
 //			for(int x=0; x <= 10; x++) { // (valor inicial; teste condicional; incremento)
 //				System.out.printf("2 x %d = %d%n", x, 2 * x);
@@ -157,10 +164,10 @@ public class Main {
 //			for(int x = 0; x <= 10; x++)
 //				System.out.println("2 x " + x + " = " + 2 * x);
 //			
-//			//Com inserÃ§Ã£o de nÃºmero
+//			//Com inserção de número
 //				
 //			Scanner entrada = new Scanner (System.in);
-//			System.out.println("Insira um nÃºmero:");
+//			System.out.println("Insira um número:");
 //			int y = entrada.nextInt();
 //			
 //			for(int x = 0; x <= 10; x++) {
@@ -174,17 +181,17 @@ public class Main {
 //			System.out.println(x1);
 //			System.out.println(y1);
 //			System.out.println(z1);
-//			System.out.println(); //Nesse caso, foi necessÃ¡rio criar um SYSO para a exibiÃ§Ã£o do valor de cada uma das variÃ¡veis. 
+//			System.out.println(); //Nesse caso, foi necessário criar um SYSO para a exibição do valor de cada uma das variáveis. 
 //			
-//			double x[] = {3.5, 5, 3, 5}; //As arrays, ou matrizes, permitem que sejam atribuÃ­dos diversos valores para uma mesma variÃ¡vel.
-//			//As arrays sÃ£o construÃ­das atravÃ©s do uso de colchetes.
+//			double x[] = {3.5, 5, 3, 5}; //As arrays, ou matrizes, permitem que sejam atribuídos diversos valores para uma mesma variável.
+//			//As arrays são construídas através do uso de colchetes.
 //			
-//			for (int aux = 0; aux < x.length; aux++) { //Criamos um laÃ§o de repetiÃ§Ã£o onde o nÃºmero inicial do Ã­ndice, representado pela variÃ¡vel
-//			//"aux", Ã© 0.
-////			O Ã­ndice serÃ¡ incrementado, recebendo +1, enquanto o valor do Ã­ndice (aux) for menor que o nÃºmero de posiÃ§Ãµes total da matriz
+//			for (int aux = 0; aux < x.length; aux++) { //Criamos um laço de repetição onde o número inicial do índice, representado pela variável
+//			//"aux", é 0.
+//			//O índice será incrementado, recebendo +1, enquanto o valor do índice (aux) for menor que o número de posições total da matriz
 //			//que criamos.
-////			A cada repetiÃ§Ã£o serÃ¡ executado o cÃ³digo abaixo, que exibe o valor inserido em cada posiÃ§Ã£o/Ã­ndice da matriz.
-//				System.out.println("Valor do Ã­ndice " + aux + " = " + x[aux]);
+//			//A cada repetição será executado o código abaixo, que exibe o valor inserido em cada posição/índice da matriz.
+//				System.out.println("Valor do índice " + aux + " = " + x[aux]);
 //			}
 //			
 //			String nome[] = {"Misael", "Neide", "Milton", "Gabriel"};
@@ -192,13 +199,13 @@ public class Main {
 //			for (int aux1 = 0; aux1 < nome.length; aux1++) {
 //				System.out.println(nome[aux1]);
 //				if (nome[aux1] == "Gabriel") {
-//					System.out.println("O Ã­ndice do nome Gabriel Ã© " + aux1);
+//					System.out.println("O índice do nome Gabriel é " + aux1);
 //				}
 //			}
 //			
-//			//Ã‰ possÃ­vel criar matrizes vazias, sem contÃ©udo algum. Exemplo de como fazer:
+//			//É possível criar matrizes vazias, sem conteúdo algum. Exemplo de como fazer:
 //			
-//			int[] arrayInt = new int[5]; //Aqui, construÃ­mos uma array do tipo inteiro. Ela terÃ¡ 5 posiÃ§Ãµes que poderÃ£o, futuramente,
+//			int[] arrayInt = new int[5]; //Aqui, construímos uma array do tipo inteiro. Ela terÃ¡ 5 posiÃ§Ãµes que poderÃ£o, futuramente,
 //			//ser ocupadas com valores inteiros. PorÃ©m, no momento de criaÃ§Ã£o, elas estÃ£o vazias. O mesmo se dÃ¡ com as matrizes abaixo.
 //			String[] arrayString = new String[4];
 //			double[] arrayDouble = new double[3];

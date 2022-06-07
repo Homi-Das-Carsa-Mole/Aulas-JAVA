@@ -1,7 +1,7 @@
 
 public class Veiculo {
 	private String nome;
-	protected String marca;
+	protected String marca; //Protected é uma forma de encapsulamento que permite que todas as classes que se extendem de "Veículo" visualizarem determinado atributo
 	protected String modelo;
 	protected int ano;
 	

@@ -28,10 +28,13 @@ public class main {
 		System.out.println(pessoa2.nome);
 		System.out.println(pessoa2.NumFigurinhas);
 		
-		
+		//Atribuindo à variável "boolean retorno" o valor do retorno que o método "dar" terá, que pode ser true ou false. 
 		boolean retorno = pessoa1.dar(5, pessoa2);
 		
-		if(retorno == true) {
+		
+		if(retorno == true) { //Se o valor de retorno que o método "dar" atribuir à variável "retorno" for true, ou seja, se a operação de transferência de
+			//figurinhas for realizada com sucesso, então o código abaixo será executado, exibindo a quantidade atualizada de figurinhas tanto de quem
+			//deu quanto de quem recebeu.  
 
 			System.out.println("Quantidade atual de figurinhas:");
 	

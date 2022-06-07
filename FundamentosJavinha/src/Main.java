@@ -71,11 +71,14 @@ public class Main {
 			
 //			int num = 1;
 //			
-			
+			//O "switch case", que conhecemos como "Escolha Caso" é uma estrutura de decisão condicional. Ele se assemelha a estrutura condicional "if-else-if",
+			//já que ele compara o valor da variável que colocarmos dentro do parâmetro do "switch" com todos os casos que definimos como possíveis.
 //			switch (num) {
-//				case 1:
+//				case 1: //Caso o valor da variável "num" seja 1, o bloco de códigos desse "case" será executado.
 //					System.out.println("O seu número é " + num + ".");
-//					break;
+//					break; //O break impede que o restante do código dentro do switch seja executado. Dessa forma, a comparação do valor da variável
+					//"num" com os outros "cases" abaixo será interrompida, *quebrada*, como o nome "break" sugere. Em outras palavras, quando usamos o
+					//break, saímos do "switch-case" e avançamos para a execução dos códigos fora dessa estrutura.
 //				case 2:
 //					System.out.println("O seu número é " + num + ".");
 //					break;
@@ -90,8 +93,7 @@ public class Main {
 //					break;
 //				}
 //					
-//				//O break impede que o restante do código dentro do switch seja executado.
-				//Quando utilizado, ele sai do switch.
+//				
 //					
 //				int num2 = 5;
 //				
@@ -106,9 +108,10 @@ public class Main {
 //						System.out.println("O seu número é " + num2 + ".");
 //					case 5:
 //						System.out.println("O seu número é " + num2 + ".");
+					//Sem o break, ocorrerá uma repetição do código. Apesar disso, não utilizar o break também pode ser útil em alguns casos.
 //				}
 					
-				//Sem o break, ocorrerá uma repetição do código. Apesar disso, não utilizar o break também pode ser útil em alguns casos.
+				
 				
 //				int num3 = 8;
 //				switch (num3) {
@@ -133,13 +136,23 @@ public class Main {
 //					case 7:
 //						System.out.println("Sábado");
 //						break;
-//					default:
+//					default: //O "default" serve para que, caso o valor da variável "num3" não se enquadre em nenhum dos casos acima, seja executado
+					//um código-padrão, nesse caso, uma mensagem na tela que diz que o valor de "num3" não representa um dia da semana.
 //						System.out.println("Esse número não representa um dia da semana.");
 //			}
 				
-//			char caractere = 'a';
+		
+		//A estrutura "switch-case" pode receber diversos tipos de variáveis. Abaixo estão alguns exemplos.
+		
+			//SWITCH-CASE COM CHAR
+	
+//			char caractere = 'a'; //Variáveis do tipo "char" suportam apenas um caractere, se diferenciando de String, que recebe um *conjunto* de caracteres.
+			//Ao usar "char", definimos o valor da variável dentro de aspas simples.
 //			
-//			switch(caractere) {
+			//Caso a variável "caractere" seja igual a 'a', o bloco de código de "case 'a'" será executado.
+			//Caso a variável "caractere" seja igual a 'b', o bloco de código de "case 'b'" será executado.
+			//Caso a variável "caractere" não se iguale a nenhum dos valores estipulados acima, 'a' ou 'b', o bloco de código de "default" será executado.
+//			switch (caractere) {
 //				case 'a':
 //					System.out.println("O seu caractere é " + caractere + ".");
 //					break;
@@ -150,8 +163,14 @@ public class Main {
 //					System.out.println("Valor inválido.");
 //			}
 			
-//			String farol = "verde";
+			//SWITCH-CASE COM STRING
+//			String farol = "verde"; //O conjunto de caracteres atribuídos a uma variável do tipo String deve estar dentro de aspas duplas.
 //			
+			//Caso o valor de "farol" seja "verde", então a ordem impressa na tela será "SIGA."
+			//Caso o valor de "farol" seja "amarelo", então a ordem impressa na tela será "ATENÇÃO."
+			//Caso o valor de "farol" seja "verde", então a ordem impressa na tela será "PARE."
+			//Caso o valor de "farol" não se iguale a "verde", "amarelo" ou "vermelho", então será impressa uma mensagem na tela que dizendo que o valor
+			//inserido na variável "farol" é classificado como inválido.
 //			switch (farol) {
 //				case "verde":
 //					System.out.println("SIGA.");
@@ -167,11 +186,20 @@ public class Main {
 //			}
 		
 //			x = 0;
-//			while(x < 10) {  //(x < 10) - Teste condicional, com resposta verdadeira ou falsa, 0 ou 1.
-//				x = x + 1; // x++
+		
+			//Laço de repetição "while", o qual conhecemos como "Enquanto".
+			//Esse laço de repetição exige a inserção de um teste condicional e, *enquanto* este teste for uma verdade, um bloco de comandos será
+			//executado. Normalmente, utilizamos o "while" quando não sabemos quantas vezes determinado bloco de códigos precisa ser executado.
+		
+			//Enquanto "x" for menor que 10, o código abaixo será executado, incrementando +1 a "x" e depois mostrando, por meio de um SYSO, qual o valor
+			//de "x" após ser incrementado. Quando "x" for igual a 10, o código deixará de ser executado.
+//			while(x < 10) {  //(x < 10) -> Teste condicional, com resposta verdadeira ou falsa. 
+//				x = x + 1; // x++ //"x++" é um incremento, e faz com que a variável antes de "++" aumente o seu valor de um em um a cada execução
+			//desse bloco de código.
 //				System.out.println(x);
 //			} 
-			//Neste caso, é primeiro feito o teste condicional. Enquanto o teste condicional for verdadeiro, o código dentro do while será executado.
+		
+			//Reforçando: No "while" é primeiro feito o teste condicional. Enquanto o teste condicional for verdadeiro, o código dentro do while será executado.
 			
 //			x = 0;
 //			do {
@@ -181,6 +209,7 @@ public class Main {
 			//Já no "do while", é primeiro executado o código e depois feito o teste condicional. Enquanto o valor do teste condicional atender
 			//à condição estipulada, o código será executado.
 			
+			//TABOADA DO DOIS
 //			for(int x=0; x <= 10; x++) { // (valor inicial; teste condicional; incremento)
 //				System.out.printf("2 x %d = %d%n", x, 2 * x);
 //			}
@@ -214,8 +243,7 @@ public class Main {
 //			
 //			for (int aux = 0; aux < x.length; aux++) { //Criamos um laço de repetição onde o número inicial do índice, representado pela variável
 //			//"aux", é 0.
-//			//O índice será incrementado, recebendo +1, enquanto o valor do índice (aux) for menor que o número de posições total da matriz
-//			//que criamos.
+//			//O índice será incrementado, recebendo +1, enquanto o valor do índice (aux) for menor que o número de posições total da matriz que criamos.
 //			//A cada repetição será executado o código abaixo, que exibe o valor inserido em cada posição/índice da matriz.
 //				System.out.println("Valor do índice " + aux + " = " + x[aux]);
 //			}
@@ -231,27 +259,27 @@ public class Main {
 //			
 //			//É possível criar matrizes vazias, sem conteúdo algum. Exemplo de como fazer:
 //			
-//			int[] arrayInt = new int[5]; //Aqui, construímos uma array do tipo inteiro. Ela terÃ¡ 5 posiÃ§Ãµes que poderÃ£o, futuramente,
-//			//ser ocupadas com valores inteiros. PorÃ©m, no momento de criaÃ§Ã£o, elas estÃ£o vazias. O mesmo se dÃ¡ com as matrizes abaixo.
+//			int[] arrayInt = new int[5]; //Aqui, construímos uma array do tipo inteiro. Ela terá 5 posições que poderão, futuramente,
+//			//ser ocupadas com valores do tipo "inteiro". Porém, no momento de criação, elas estão vazias. O mesmo se dá com as matrizes abaixo.
 //			String[] arrayString = new String[4];
 //			double[] arrayDouble = new double[3];
 //			
-//			arrayInt[3] = 4; //Nessa linha atribui-se o valor 4 para a posiÃ§Ã£o 3 da matriz.
+//			arrayInt[3] = 4; //Nessa linha atribui-se o valor 4 para a posição 3 da matriz.
 //			
 //			int[] numero = new int[6];
 //			Scanner teclado = new Scanner(System.in);
 //			
 //			for (int aux2 = 0; aux2 < numero.length; aux2++) {
-//				System.out.println("Digite um nÃºmero qualquer");
+//				System.out.println("Digite um número qualquer");
 //				numero[aux2] = teclado.nextInt();
 //			}
 //			for (int aux2 = 0; aux2 < numero.length; aux2++) {
-//				System.out.println("O Ã­ndice do nÃºmero " + numero[aux2] + " Ã© igual a " + aux2);
+//				System.out.println("O índice do número " + numero[aux2] + " é igual a " + aux2);
 //			}
 			
 		int[] arrayQualquer = new int[3];
 			
-			Object[] arrayObject = new Object[4];
+			Object[] arrayObject = new Object[4]; //Uma arrayObject consegue comportar em suas posições qualquer tipo de variável
 			
 			arrayObject[0] = "taaaaake oooooon meeeeeeee";
 			arrayObject[1] = 12;

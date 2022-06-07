@@ -1,9 +1,9 @@
-
+//As definições de herança já foram explicadas no projeto "Polimorfismo".
 public class Veiculo {
 	private String nome;
-	protected String marca; //Protected é uma forma de encapsulamento que permite que todas as classes que se extendem de "Veículo" visualizarem determinado atributo
+	protected String marca; 
 	protected String modelo;
-	protected int ano;
+	protected int ano; //Protected é um modificador de acesso que permite que as subclasses geradas a partir da superclasse "Veiculo" tenham acesso aos seus atributos.
 	
 	public void buzinar() {
 		System.out.println("FON FON!");

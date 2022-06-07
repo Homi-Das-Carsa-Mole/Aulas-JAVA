@@ -4,13 +4,33 @@ public class Main {
 
 	public static void main(String[] args) {
 		/*
-		int x = 100;
-		double y = 200;
+		int x = 100; //Variável "x" do tipo "int", isto é, inteiro (sem casas decimais).
+		double y = 200; //Variável "y" do tipo "double", o qual faz parte da família dos Reais, contendo casas decimais.
 		
-		int a = 0;
+		//Existem outros tipos primitivos de variáveis numéricas, como o "float". O float - ponto flutuante - assim como o double, também faz parte da 
+		//família dos Reais. Tanto float quanto int conseguem comportar até 4 bytes de dados, enquanto o tipo double, como o próprio nome já diz, comporta
+		//o *dobro* - até 8 bytes de dados.
+		
+		//Inicializando as variáveis "a" e "b" por definir um valor para elas:
+		int a = 0; 
 		double b = 0;
 		
-		short z = (int) 10000;
+		short z = (int) 10000; //Variável "short" compõe a família dos inteiros, e suporta até 2 bytes de dados. O número máximo que essa variável é capaz de
+		//conter é 32.767 (trinta e dois mil setecentos e sessenta e sete).
+		
+		//Resumo dos tipos primitivos de variáveis:
+		
+		//boolean - Família: Lógico / Tamanho: 1 bit / Exemplo: true
+		//char - Família: Literais / Tamanho: 1 byte / Exemplo: 'A'
+		//String - Família: Literais / Tamanho: 1 byte/cada / Exemplo: "Rafaelegal"
+		//byte - Família: Inteiros / Tamanho: 1 byte / Exemplo: 127
+		//short - Família: Inteiros / Tamanho: 2 bytes / Exemplo: 32 767
+		//int - Família: Inteiros / Tamanho: 4 bytes / Exemplo: 2 147 483
+		//long - Família: Inteiros / Tamanho: 8 bytes / Exemplo: 2^63
+		//float - Família: Reais / Tamanho: 4 bytes / Exemplo: 3.4^+38
+		//double - Família: Reais / Tamanho: 8 bytes / Exemplo: 1.8e^+308
+		
+		
 		System.out.println(z);
 		
 		a = (int) y; //Exemplo de Casting Explícito. Nesse tipo de Casting é necessário deixar explícito que se deseja passar o conteúdo da variável
@@ -24,22 +44,28 @@ public class Main {
 		System.out.println(a);
 		System.out.println(b);
 		
+		
 		int idadePessoa = 70;
 		
 		//Teste condicional IF. O "if" (se) nos permite definir uma condição e, *se* ela for atendida, uma linha de códigos será executada.
 		if (idadePessoa < 18) { //Se uma pessoa tiver menos que 18 anos de idade, será exibida uma mensagem dizendo que ela ainda não pode ingerir
 		//bebidas alcoólicas.
 			System.out.println("Você não pode beber.");
-		} //Se queremos adicionar um novo teste condicional, pode-se fazer uso do "else if", também conhecido como "senão se".
-		else if (idadePessoa < 60) { //Agora determinamos que pessoas com menos de 60 anos podem fazer ingestão de bebidas alcoólicas. Ao mesmo tempo,
-		//por conta do teste condicional anterior, apenas aqueles com idade entre 18 e 60 anos estão habilitados pela lei para beber álcool. 
+		}
+		//Se queremos adicionar mais de um teste condicional para ser testado, "um novo caminho", podemos fazer uso do "else if", também conhecido 
+		//como "senão se". Essa é uma forma de aninhamento de "if's"/testes condicionais.
+		//O teste condicional abaixo será realizado em caso do anterior não se mostrar uma verdade.
+		else if (idadePessoa < 60) { //Agora determinamos que se uma pessoa tiver menos que 60 anos de idade, ela poderá fazer a ingestão de bebidas alcoólicas. 
+		//Ao mesmo tempo, por conta do teste condicional anterior, apenas aqueles com idade entre 18 e 60 anos estão habilitados pela lei para beber álcool. 
 			System.out.println("Você pode beber à vontade, meu camaradis da cachacis.");
 		}
-		else { //O "else" (senão) tem como função executar outra linha de comando se nenhuma das outras condições definidas anteriormente for atendida.
+		else { //O "else" (senão) tem como função executar outra linha de comando se nenhuma das condições definidas anteriormente for atendida.
 		//Nesse caso, o "else" determina que aqueles que tiverem de 60 anos para cima precisam voltar para o asilo.
 			System.out.println("Volta pro asilo.");
 		}
-		
+			
+			//O SYSO abaixo tem a finalidade de mostrar o valor da variável "idadePessoa" em meio a um texto. A junção de textos com o valor de variáveis se dá
+			//através do uso do sinal "+". Esse tipo de ligação leva o nome de concatenação.
 			System.out.println("Você tem " + idadePessoa + " anos.");
 		*/
 			
@@ -69,7 +95,7 @@ public class Main {
 //					
 //				int num2 = 5;
 //				
-//				switch (num) {
+//				switch (num2) {
 //					case 1:
 //						System.out.println("O seu número é " + num2 + ".");
 //					case 2:

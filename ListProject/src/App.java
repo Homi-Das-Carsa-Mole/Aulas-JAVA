@@ -1,14 +1,14 @@
-import java.util.ArrayList;
+import java.util.ArrayList; //Importando utilidades do Java. 
 import java.util.List;
 
 public class App {
 
 	public static void main(String[] args) {
-		//List � uma interface
+		 
 		
-		List lista = new ArrayList();
+		List lista = new ArrayList(); //List é uma interface. List permite que façamos, como o próprio nome sugere, uma lista
 		
-//		lista.add("AE, CASSIN�OOOOOOOOOOOOOOOOOOO");
+//		lista.add("AE, CASSINÃOOOOOOOOOOOOOOOOOOO");
 //		lista.add(20);
 //		lista.add(true);
 //		
@@ -43,11 +43,11 @@ public class App {
 //		lista.clear();
 //		
 //		if(lista.isEmpty()) {
-//			System.out.println("A sua lista est� vazia");
+//			System.out.println("A sua lista está vazia");
 //		}
 //		
 		
-		Conta conta1 = new Conta("�gua", 60);
+		Conta conta1 = new Conta("Água", 60);
 		Conta conta2 = new Conta("Luz", 70);
 		
 		List <Conta> listaDeContas = new ArrayList<Conta>();
@@ -55,7 +55,10 @@ public class App {
 		listaDeContas.add(conta1);
 		listaDeContas.add(conta2);
 		
-		for(Conta conta : listaDeContas) {
+		//Enhanced-for (loop "for" *aprimorado*) , também conhecido como "forEach" (para cada), é um laço de repetição.
+		for(Conta conta : listaDeContas) {//Para cada (daí o "for each") variável do tipo Conta que encontrarmos *em* (representado pelo sinal ":") listaDeContas,
+			//será executada a linha de comando abaixo, que pede para que seja impressa a variável do tipo Conta, exibindo as informações contidas nela.
+			//O Enhanced-for faz como que uma varredura na lista de array em busca do elemento desejado.
 			System.out.println(conta);
 		}
 		

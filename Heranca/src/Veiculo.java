@@ -1,9 +1,10 @@
-//As definições de herança já foram explicadas no projeto "Polimorfismo".
+//As definições de herança já foram explicadas no projeto "Polimorfismo&Herança" =)
 public class Veiculo {
 	private String nome;
 	protected String marca; 
 	protected String modelo;
-	protected int ano; //Protected é um modificador de acesso que permite que as subclasses geradas a partir da superclasse "Veiculo" tenham acesso aos seus atributos.
+	protected int ano; //Protected é um modificador de acesso que permite que apenas as subclasses geradas a partir da superclasse "Veiculo" tenham acesso
+	//aos seus atributos.
 	
 	public void buzinar() {
 		System.out.println("FON FON!");

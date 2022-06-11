@@ -3,13 +3,16 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		//Item item = new Intel(); //N„o È possÌvel criar uma inst‚ncia de uma classe abstrata. Item, por exemplo, È algo muito genÈrico, abstrata, n„o È um objeto propriamente dito
+		//Item item = new Intel(); //N√£o √© poss√≠vel criar uma inst√¢ncia de uma classe abstrata. 
+		//"Item" √© algo muito gen√©rico, abstrato, n√£o √© um objeto propriamente dito.
 		
 		Item item = new Cogumelo();
-		item.pegar(); //N„o se repete "Item" no inÌcio dessa linha, pois a varÌavel desse tipo j· foi criando. Sendo assim, n„o È necess·rio explicitar que essa varÌavel È do tipo "Item" novamente.
+		item.pegar(); //N√£o se repete "Item" no in√≠cio dessa linha, pois a vari√°vel desse tipo j√° foi criada. Sendo assim, n√£o √© necess√°rio
+		//explicitar que essa vari√°vel √© do tipo "Item" novamente.
 		
-		item = new Diamante(); //Uma das vantagens de utilizar uma classe abstrata È a possibilidade de usar do polimorfismo. Aqui, uma mesma vari·vel est· se comportando de forma diferente
-		item.pegar();
+		item = new Diamante(); 
+		item.pegar(); //Uma das vantagens de utilizar uma classe abstrata √© a possibilidade de usar do polimorfismo. Notamos que um mesmo m√©todo est√° se
+		//comportando de forma diferente de acordo com o tipo de objeto que o utiliza.
 		
 		item = new Moeda();
 		item.pegar();

@@ -62,7 +62,9 @@ public class Cliente { //Declaração dos atributos da classe Cliente
 	}
 
 	@Override
-	//Método Equals: serve para comparar objetos e verificar se eles são iguais.
+	//Método Equals: serve para comparar objetos e verificar se eles são iguais. Naturalmente, o método "equals" apontará que dois objetos são diferentes, pois compara
+	//apenas o endereço desses objetos na memória heap. No entanto, o "Override" feito neste método nos permite o que há dentro de duas variáveis e concluir se
+	//elas são iguais em conteúdo.
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;

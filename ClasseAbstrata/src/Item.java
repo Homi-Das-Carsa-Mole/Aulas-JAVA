@@ -7,9 +7,11 @@ public abstract class Item {//Uma classe abstrata é uma superclasse que estende
 	private int posY;
 	
 	public abstract void pegar(); //Métodos abstratos forçam as classes que se estendem de uma classe abstrata (nesse caso a "Item"), consequentemente utilizando de seus
-	//métodos abstratos, a sobrescrever (fazer um Override) e especificar como estes métodos irão se comportar. Um mesmo método genérico 
-	//Classes abstratas precisam somente de sua assinatura, ou seja, o tipo de variável que será retornada e seus parâmetros; não é preciso abrir chaves e desenvolver
-	//uma linha de códigos que especifique o que ocorrerá dentro do método. Esse procedimento é realizado dentro de cada classe filha que herda o método em questão.
+	//métodos abstratos, a sobrescrever (fazer um Override) e especificar como estes métodos irão se comportar. Todas as classes herdeiras de "Item" poderão fazer uso do
+	//método "pegar" e usá-lo como preferirem.
+	//Métodos abstratos exigem apenas a inserção de sua assinatura, ou seja, o tipo de variável que será retornada e seus parâmetros, para que possam ser usados por outras
+	//classes. Isso significa que não é preciso fazer uso de abertura e fechamento de chaves e desenvolver uma linha de códigos que especifique o que ocorrerá dentro do
+	//método. Esse procedimento é realizado dentro de cada classe filha que herda o método em questão.
 
 	public int getPosX() {
 		return posX;

@@ -52,7 +52,7 @@ public class Main {
 		} else {
 			System.out.println("Os objetos são diferentes.");
 		}
-		//Os objetos, apesar de possuírem atributos idênticos, são diferentes, pois possuem endereços diferentes na memória heap.
+		//Os objetos "cliente1" e "cliente2", apesar de possuírem atributos idênticos, são diferentes, pois possuem endereços diferentes na memória heap.
 		
 		//No entanto, se igualarmos ambos os objetos (cliente2 = cliente1), o cliente2 passará a apontar para o mesmo endereço da heap de cliente1
 		//tornando-se iguais.

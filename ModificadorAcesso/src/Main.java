@@ -63,7 +63,7 @@ public class Main {
 			System.out.println("Os nomes são diferentes.");
 		}
 		
-		if(cliente1.equals(cliente2)) { //Aplicação do método "equals", que foi sobrescrito, a fim de comparar o conteúdo
+		if(cliente1.equals(cliente2)) { //Aplicação do método "equals", que foi sobrescrito, a fim de comparar o conteúdo.
 			//como um todo das variáveis "cliente1" e "cliente2".
 			System.out.println("Os atributos dos objetos são iguais.");
 		} else {

@@ -2,7 +2,7 @@ package projeto_misa;
 
 public class TrocarLâmpada {
 	public static void main(String[] args) {
-		System.out.println("Hello World, Olá Mundo, Hola Mundo"); //System.out.println permite exibirmos algo no console
+		System.out.println("Hello World, Olá Mundo, Hola Mundo"); //System.out.println permite exibirmos algo no console.
 		System.out.println("----------------------------------");
 		System.out.println("Pegar a lâmpada");
 		System.out.println("Pegar a escada");

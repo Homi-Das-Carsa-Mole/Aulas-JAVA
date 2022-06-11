@@ -9,7 +9,7 @@ public class Cliente { //Declaração dos atributos da classe Cliente
 	//"Public", "Private" e "Protected" são classificados como modificadores de acesso, já que permitem determinar se outras classes podem ter acesso ou não
 	//a um atributo ou método, os encapsulando.
 	//A fim de se ter acesso aos atributos da classe Cliente, bem como a capacidade de modificá-los, é necessário gerar os métodos Get e Set (Getters and Setters).
-	//O método "get" nos permite, como o próprio sugere, *pegar*/visualizar uma informação.
+	//O método "get" nos permite, como o próprio sugere, *pegar*/ter o retorno de uma informação.
 	//Já o método "set" possibilita a *definição*/modificação do conteúdo de determinado atributo/variável.	
 	
 	//Construtor de um objeto da classe Cliente:

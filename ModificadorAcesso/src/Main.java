@@ -35,7 +35,7 @@ public class Main {
 //		System.out.println(cliente1.getCpf());
 //		System.out.println(cliente1.getNumConta());
 		
-		System.out.println(cliente1.toString()); //MÈtodo que mostra todos os dados de cliente.
+		System.out.println(cliente1.toString()); //Aplica√ß√£o do m√©todo "toString" que mostra, com o aux√≠lio de um SYSO, todos os dados da vari√°vel "cliente1".
 		
 		Cliente cliente2 = new Cliente();
 		
@@ -47,25 +47,27 @@ public class Main {
 		
 		System.out.println(cliente2);
 		
-		if(cliente1 == cliente2) { //ComparaÁ„o de endereÁos
-			System.out.println("Os objetos s„o iguais.");
+		if(cliente1 == cliente2) { //Compara√ß√£o de endere√ßos.
+			System.out.println("Os objetos s√£o iguais.");
 		} else {
-			System.out.println("Os objetos s„o diferentes.");
+			System.out.println("Os objetos s√£o diferentes.");
 		}
-		 //Os objetos, apesar de possuÌrem atributos idÍnticos, s„o diferentes, pois possuem endereÁos diferentes na memÛria heap.
+		//Os objetos, apesar de possu√≠rem atributos id√™nticos, s√£o diferentes, pois possuem endere√ßos diferentes na mem√≥ria heap.
 		
-		//No entanto, se igualarmos ambos os objetos (cliente2 = cliente1), o cliente2 passar· a apontar para o mesmo endereÁo da heap de cliente1. Agora eles s„o iguais.
+		//No entanto, se igualarmos ambos os objetos (cliente2 = cliente1), o cliente2 passar√° a apontar para o mesmo endere√ßo da heap de cliente1
+		//tornando-se iguais.
 
-		if(cliente1.getNome() == cliente2.getNome()) { //ComparaÁ„o de atributo especÌfico
-			System.out.println("Os nomes s„o iguais.");
+		if(cliente1.getNome() == cliente2.getNome()) { //Compara√ß√£o de atributo/conte√∫do espec√≠fico entre as vari√°veis "cliente1" e "cliente2".
+			System.out.println("Os nomes s√£o iguais.");
 		} else {
-			System.out.println("Os nomes s„o diferentes.");
+			System.out.println("Os nomes s√£o diferentes.");
 		}
 		
-		if(cliente1.equals(cliente2)) { //Sem sobrescrever, ele comparar· os endereÁos
-			System.out.println("Os atributos dos objetos s„o iguais.");
+		if(cliente1.equals(cliente2)) { //Aplica√ß√£o do m√©todo "equals", que foi sobrescrito, a fim de comparar o conte√∫do
+			//como um todo das vari√°veis "cliente1" e "cliente2".
+			System.out.println("Os atributos dos objetos s√£o iguais.");
 		} else {
-			System.out.println("Os atributos dos objetos s„o diferentes.");
+			System.out.println("Os atributos dos objetos s√£o diferentes.");
 		}
 	
 	

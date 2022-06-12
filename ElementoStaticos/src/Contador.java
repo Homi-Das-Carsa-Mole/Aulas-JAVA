@@ -1,5 +1,5 @@
 
-public class Contador { //Atributos e métodos estáticos são declarados através do uso de "static".
+public class Contador { //Atributos e métodos estáticos são declarados através do uso da palavra "static".
 	private static int valor;
 	
 //	public Contador() {

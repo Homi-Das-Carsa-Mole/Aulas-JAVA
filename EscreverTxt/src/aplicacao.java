@@ -11,7 +11,8 @@ public class aplicacao {
 		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("saida.txt"))) {
 		//Variavel do tipo BufferedWriter
 				
-		escrever.write(s);
+		escrever.write(s);//Escrevendo o valor de "String s" em "saída.txt". Há "melhores" explicações sobre escrita e leitura de arquivos de texto nos projetos
+			//"EscreverTx2" e "LerTx2
 		
 		}
 		

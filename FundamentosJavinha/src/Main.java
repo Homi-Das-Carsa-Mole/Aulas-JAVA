@@ -209,7 +209,7 @@ public class Main {
 			//Já no "do while", é primeiro executado o código e depois feito o teste condicional. Enquanto o valor do teste condicional atender
 			//à condição estipulada, o código será executado.
 			
-			//TABOADA DO DOIS
+			//TABUADA DO DOIS
 //			for(int x=0; x <= 10; x++) { // (valor inicial; teste condicional; incremento)
 //				System.out.printf("2 x %d = %d%n", x, 2 * x);
 //			}
@@ -229,6 +229,9 @@ public class Main {
 //				System.out.println(y + " x " + x + " = " + x*y);
 //			}
 			
+		
+		//ARRAYS:
+		
 //			int x1 = 3;
 //			int y1 = 5;
 //			int z1 = 7;
@@ -236,20 +239,39 @@ public class Main {
 //			System.out.println(x1);
 //			System.out.println(y1);
 //			System.out.println(z1);
-//			System.out.println(); //Nesse caso, foi necessário criar um SYSO para a exibição do valor de cada uma das variáveis. 
+//			System.out.println(); //Foi necessário criar um SYSO para a exibição do valor de cada uma das variáveis. Isso poderia ser facilmente evitado
+			//por fazer uso de uma array.
 //			
-//			double x[] = {3.5, 5, 3, 5}; //As arrays, ou matrizes, permitem que sejam atribuídos diversos valores para uma mesma variável.
-//			//As arrays são construídas através do uso de colchetes.
+		//CRIANDO UMA ARRAY: 
+		
+//			double x[] = {3.5, 5, 7, 4}; 
+		
+			//Uma array, isto é, uma matriz, permite que diversos valores do tipo double sejam armazenados numa única variável, cada valor sendo alojado em uma
+			//posição diferente dessa matriz, formando como que uma tabela de dados.
+			//A forma como construímos a array acima, a array "x", permite inserirmos em meio às chaves os valores que serão guardados em cada posição.
+			//A array "x" tem um total de 4 posições, as quais são contadas a partir do número 0, indo até o número 3, nesse caso. A seguir é possível
+			//entender melhor a construção dessa array:
+		
+		//Na posição 0 está o número 3.5;
+		//Na posição 1 está o número 5;
+		//Na posição 2 está o número 7;
+		//Na posição 3 está o número 4.
+		//Total de 4 posições, também conhecidas por "índices". O número de posições/índices que uma array terá é o que definirá o seu tamanho.
 //			
+//			
+			//ITERAÇÃO - FAZENDO REPETIDAS PASSAGENS PELA ARRAY "x":
 //			for (int aux = 0; aux < x.length; aux++) { //Criamos um laço de repetição onde o número inicial do índice, representado pela variável
 //			//"aux", é 0.
-//			//O índice será incrementado, recebendo +1, enquanto o valor do índice (aux) for menor que o número de posições total da matriz que criamos.
-//			//A cada repetição será executado o código abaixo, que exibe o valor inserido em cada posição/índice da matriz.
+//			//O índice será incrementado, recebendo +1, enquanto o valor do índice (aux) for menor que o número de posições total da matriz que criamos,
+			//realizando repetições até que "aux" ultrapasse o tamanho da array, representado por "x.lenght".
+//			//A cada repetição será executado o código abaixo, que exibe o valor inserido em cada posição/índice da matriz. Todo esse procedimento, onde
+			//geralmente se faz uso do "for", é chamado de "iteração", que significa "repetir/fazer de novo".
 //				System.out.println("Valor do índice " + aux + " = " + x[aux]);
 //			}
 //			
 //			String nome[] = {"Misael", "Neide", "Milton", "Gabriel"};
 //			
+			//ITERAÇÃO SOBRE A ARRAY "NOME":
 //			for (int aux1 = 0; aux1 < nome.length; aux1++) {
 //				System.out.println(nome[aux1]);
 //				if (nome[aux1] == "Gabriel") {
@@ -257,19 +279,22 @@ public class Main {
 //				}
 //			}
 //			
-//			//É possível criar matrizes vazias, sem conteúdo algum. Exemplo de como fazer:
+//			//É possível criar matrizes vazias, sem conteúdo algum, informando somente a quantidade de posições que elas terão. Exemplo de como fazer:
 //			
-//			int[] arrayInt = new int[5]; //Aqui, construímos uma array do tipo inteiro. Ela terá 5 posições que poderão, futuramente,
-//			//ser ocupadas com valores do tipo "inteiro". Porém, no momento de criação, elas estão vazias. O mesmo se dá com as matrizes abaixo.
-//			String[] arrayString = new String[4];
-//			double[] arrayDouble = new double[3];
-//			
+//			int[] arrayInt = new int[5]; //Aqui, construímos uma array do tipo "int". Ela tem em seu índice o número 5, indicando que terá 5 posições que poderão,
+			//futuramente, ser ocupadas com 5 valores de tipo inteiro, porém, no momento de criação, elas estão vazias. O mesmo se dá com as matrizes abaixo.
+//			String[] arrayString = new String[4]; //Instância de uma array do tipo String, chamada "arrayString", e que comporta até 4 valores que também
+			//sejam do tipo String. 
+//			double[] arrayDouble = new double[3]; //Instância de uma array do tipo double, chamada "arrayDouble", e que comporta até 3 valores que também 
+			//sejam do tipo double.
+		
 //			arrayInt[3] = 4; //Nessa linha atribui-se o valor 4 para a posição 3 da matriz.
 //			
 //			int[] numero = new int[6];
 //			Scanner teclado = new Scanner(System.in);
 //			
-//			for (int aux2 = 0; aux2 < numero.length; aux2++) {
+//			for (int aux2 = 0; aux2 < numero.length; aux2++) { //Atribuindo para cada índice (aux2) da array "numero" o valor "int" que desejarmos até alcançarmos
+			//o tamanho máximo dessa array, que é de 6 posições, contadas de 0 a 5.
 //				System.out.println("Digite um número qualquer");
 //				numero[aux2] = teclado.nextInt();
 //			}
@@ -279,24 +304,36 @@ public class Main {
 			
 		int[] arrayQualquer = new int[3];
 			
-			Object[] arrayObject = new Object[4]; //Uma arrayObject consegue comportar em suas posições qualquer tipo de variável
+			Object[] arrayObject = new Object[5]; //Uma array do tipo "Object" consegue comportar em suas posições qualquer tipo de variável e até mesmo outros
+			//arrays, haja vista que "Object" é a superclasse que estende todas as outras classes existentes no Java. A superclasse "Object" é, por assim dizer,
+			//a classe "Deus" do Java, que originou todas as outras classes que conhecemos.
 			
-			arrayObject[0] = "taaaaake oooooon meeeeeeee";
+			arrayObject[0] = "COMO DESLIGA O CAPS LOCK?!?!?!?!?!?!?!?!?!?";
 			arrayObject[1] = 12;
 			arrayObject[2] = 13.7;
 			arrayObject[3] = true;
 			arrayObject[4] = arrayQualquer;
 			
+			//ITERAÇÃO:
 			for (int aux2 = 0; aux2 < arrayObject.length; aux2++) {
-				System.out.println("índice" + aux2 + " = " + arrayObject[aux2]);
+				System.out.println("índice" + aux2 + " = " + arrayObject[aux2]); //Mostrando quais os valores contidos em cada índice da array.
 				
 			}
+		
+			System.out.println();
 			
-			int[][] arrayBidirecional = new int[3][3];
-			
-			for (int linha = 0; linha < arrayBidirecional.length; linha++) {
-				for (int coluna = 0; coluna < arrayBidirecional[0].length; coluna++) {
-					System.out.print("Índice [" + linha + "][" + coluna + "] = " + arrayBidirecional[linha][coluna] + "");
+			//CRIANDO ARRAY BIDIRECIONAL:
+			int[][] arrayBidirecional = new int[4][3]; //Array bidirecional do tipo "int", onde o primeiro par de colchetes representa o índice de linhas,
+			//enquanto o segundo par se refere ao índice de colunas.
+		
+			arrayBidirecional[0][2] = 3; //Aqui, indicamos que no ponto onde a linha 0 e a coluna 2 se encontram está posicionado o número 3 (lembrando de
+			//contar tanto as linhas quanto as colunas a partir do 0).
+			arrayBidirecional[2][2] = 5; //O número 5 está posicionado no ponto onde linha 2 e coluna 3 se interceptam.
+
+			//ITERANDO SOBRE UMA ARRAY BIDIRECIONAL:
+			for (int linha = 0; linha < arrayBidirecional.length; linha++) {//Se refere ao índice de linhas.
+				for (int coluna = 0; coluna < arrayBidirecional[0].length; coluna++) {//Se refere ao índice de colunas.
+					System.out.print("Índice [" + linha + "][" + coluna + "] = " + arrayBidirecional[linha][coluna] + " | ");
 				}
 				System.out.println();
 			}

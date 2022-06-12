@@ -49,7 +49,7 @@ public class Cliente { //Declaração dos atributos da classe Cliente
 	}
 
 	@Override
-	//Método "toString", que converte, como o nome diz, *para String* todos os atributos que desejamos visualizar.
+	//Método "toString", que converte, como o nome diz, *para String* todos os atributos de um objeto que desejamos visualizar.
 	//Ao gerarmos esse método, nos é oferecida, automaticamente, uma String com todas as informações que exigirmos.
 	//É possível modificar, por meio de um Override, a forma como essas informações serão exibidas; foi o que fizemos neste caso.
 	public String toString() {

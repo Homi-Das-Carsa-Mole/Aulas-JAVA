@@ -191,23 +191,25 @@ public class Main {
 			//Esse laço de repetição exige a inserção de um teste condicional e, *enquanto* este teste for uma verdade, um bloco de comandos será
 			//executado. Normalmente, utilizamos o "while" quando não sabemos quantas vezes determinado bloco de códigos precisa ser executado.
 		
-			//Enquanto "x" for menor que 10, o código abaixo será executado, incrementando +1 a "x" e depois mostrando, por meio de um SYSO, qual o valor
-			//de "x" após ser incrementado. Quando "x" for igual a 10, o código deixará de ser executado.
-//			while(x < 10) {  //(x < 10) -> Teste condicional, com resposta verdadeira ou falsa. 
-//				x = x + 1; // x++ //"x++" é um incremento, e faz com que a variável antes de "++" aumente o seu valor de um em um a cada execução
-			//desse bloco de código.
+//			while(x < 10) {  //(x < 10) -> Teste condicional, com resposta verdadeira ou falsa. Enquanto "x" for menor que 10, o código abaixo será
+			//executado, incrementando +1 a "x" e depois mostrando, por meio de um SYSO, qual o valor de "x" após ser incrementado. Quando "x" for igual
+			//a 10, o código deixará de ser executado.
+//				x = x + 1; // x++ //"x++" é um incremento, e tem a função de somar +1 à variável que antecede o sinal de "++". Dentro de uma estrutura de
+				//repetição, o "++" aumenta o valor de uma variável de um em um (isto é, a incrementa) a cada loop, o que garante, nesse caso, que em algum
+				//momento alcancemos o valor mínimo para sairmos do laço de repetição.
 //				System.out.println(x);
 //			} 
 		
 			//Reforçando: No "while" é primeiro feito o teste condicional. Enquanto o teste condicional for verdadeiro, o código dentro do while será executado.
 			
+			//Já no "do-while", é primeiro executado o código e depois feito o teste condicional. Enquanto o valor do teste condicional atender
+			//à condição estipulada, o código será executado.
 //			x = 0;
 //			do {
 //				System.out.println(x);
 //				x = x + 1;
 //			} while (x < 10);
-			//Já no "do while", é primeiro executado o código e depois feito o teste condicional. Enquanto o valor do teste condicional atender
-			//à condição estipulada, o código será executado.
+			
 			
 			//TABUADA DO DOIS
 //			for(int x=0; x <= 10; x++) { // (valor inicial; teste condicional; incremento)

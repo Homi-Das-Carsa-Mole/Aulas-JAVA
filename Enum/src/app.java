@@ -3,7 +3,7 @@ public class app {
 	
 	public static final double PI = 3.14;
 	
-	//Exemplo de como criar um enum na mesma folha da aplicaÁ„o/classe main:
+	//Exemplo de como criar um enum na mesma folha da aplica√ß√£o/classe main:
 	
 	private enum Sexo {
 		MASCULINO, FEMININO
@@ -11,26 +11,32 @@ public class app {
 
 	public static void main(String[] args) {
 		
-		double pi =  app.PI;
+		//Uma enum pode ser criada fora de uma folha de classe, mas precisar√° ser armazenada dentro de algum lugar.
+		double pi =  app.PI; //
 		
 		DiaDaSemana hoje = DiaDaSemana.SEGUNDA;
-		//SÛ aceita os endereÁos das vari·veis que foram criadas no enum DiaDaSemana
+		//"hoje", por ser S√≥ aceita os endere√ßos das constantes que foram criadas no enum DiaDaSemana
 		
 		int num = DiaDaSemana.SEGUNDA.getNum();
-		//Acesso ao valor atribuido para a variavel "num" que est· contida no enum SEGUNDA
+		//Acesso ao valor atribuido para a variavel "num" que estÔøΩ contida no enum SEGUNDA
 		System.out.println(num);
 		
 		String s = "TERCA";	
-//		hoje = s; //Erro: a vari·vel "hoje" È do tipo enum "DiaDaSemana". Portanto, ela n„o conseguir· receber outros valores a n„o ser aqueles que existem no Enum DiaDaSemana
+//		hoje = s; //Erro: a vari√°vel "hoje" √© do tipo enum "DiaDaSemana". Portanto, ela n√£o conseguir√° receber outros valores a n√£o ser aqueles que existem no
+		//Enum DiaDaSemana.
 		
 		hoje = DiaDaSemana.valueOf(s);
-		//Esse mÈtodo procura por um valor que seja semelhante ao que queremos atribuir ‡ vari·vel hoje e o converte para um tipo que possa ser atribuido a variavel "hoje"
+		//Esse mÔøΩtodo procura por um valor que seja semelhante ao que queremos atribuir √† vari√°vel "hoje" (valueOf "s" - valor da vari√°vel "s") e o converte
+		//para um tipo que possa ser atribu√≠do √† vari√°vel "hoje".
 		
 		System.out.println(hoje.getNum());
 		
+		//Uma vari√°vel chamada "sexo" que √© um Enum do tipo "Sexo" estar√° limitada a receber apenas os valores pr√©-definidos/as constantes de Enum "Sexo",
+		//ou seja, apenas "FEMININO" e "MASCULINO".
 		Sexo sexo = Sexo.FEMININO;
 		sexo = Sexo.MASCULINO;
 		
 	}
 
 }
+

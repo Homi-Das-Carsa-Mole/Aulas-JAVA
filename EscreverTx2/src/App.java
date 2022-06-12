@@ -47,7 +47,8 @@ public class App {
 		//FileWriter escreve diretamente no arquivo.
 		try(BufferedWriter escrever = new BufferedWriter(new FileWriter("sabonetes.txt"))){//Criação de um objeto do tipo "BufferedWriter", que se chamará "escrever".
 		//BufferedWriter, em seu método construtor, invoca o construtor de "FileWriter" que leva como argumento de seu parâmetro um objeto do tipo arquivo.
-			//For-each para encontrar em "listaDeSabonetes" objetos do tipo "Sabonete", armazenando eles, a cada iteração, na variável "sabs". 
+			//For-each para que a cada objeto do tipo "Sabonete" encontrado em "listaDeSabonetes" seja executado o código abaixo, que escreve as informações do
+			//objeto numa linha do arquivo txt.
 			for(Sabonete sabs : listaDeSabonetes) {
 				escrever.write(sabs.toString());//Escrevendo em "sabonetes.txt", através do método "write", o valor de retorno do método "toString" 
 				//encontrado na classe "Sabonete" e chamado pelo objeto "sabs".

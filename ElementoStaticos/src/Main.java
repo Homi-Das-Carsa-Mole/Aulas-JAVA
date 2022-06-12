@@ -12,7 +12,7 @@ public class Main {
 //		resultado = matematica.subtrair(10, 4);
 //		System.out.println("O resultado é " + resultado);
 	
-		//Mas não dependem da existência de um objeto para que possam ser acionados e realizar sua finalidade, como mostram os exemplos abaixo:
+		//Mas não dependem da instância de um objeto de sua classe para que possam ser acessados e terem suas funções acionadas, como mostram os exemplos abaixo:
 //		resultado = Matematica.somar(2, 4);
 //		System.out.println("O resultado da soma é " + resultado);
 //		

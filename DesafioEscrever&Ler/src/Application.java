@@ -29,7 +29,8 @@ public class Application {
 				textoSaida += line + "\n";
 			}
 			
-			System.out.println(textoSaida);
+			System.out.println(textoSaida);//Ao imprirmirmos "textoSaida", será exibido na tela o mesmo conteúdo de "entrada.txt", haja vista que todos os dados
+			//lidos nesse arquivo de texto foram armazenados em "textoSaida".
 			
 		}
 		

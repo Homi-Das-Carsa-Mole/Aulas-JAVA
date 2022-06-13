@@ -27,7 +27,7 @@ public class Sabonete {
 		String[] arrayAuxiliar1 = texto.split(","); //O "split" quebra a linha de texto quando encontra o caractere especificado.
 		String[] arrayAuxiliar2 = arrayAuxiliar1[0].split("=");
 		this.cheiro = arrayAuxiliar2[1].trim(); //O "trim" serve para limpar os espacos vazios ao redor do valor que desejamos isolar. Nessa mesma linha estamos
-		//atribuindo o valor que isolamos, no caso, qual é o cheiro do sabonete, e o atribuindo à variável cheiro de "Sabonete". O mesmo procedimento será feito
+		//atribuindo o valor que isolamos, no caso, qual é o cheiro do sabonete, à variável "cheiro" de "Sabonete". O mesmo procedimento será feito
 		//no pequeno bloco de comandos abaixo, porém, com o valor que representa a cor do sabonete.
 		
 		String[] arrayAuxiliar3 = arrayAuxiliar1[1].split("=");

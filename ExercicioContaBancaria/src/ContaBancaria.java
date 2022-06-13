@@ -23,6 +23,8 @@ public abstract class ContaBancaria {//Superclasse abstrata da qual "ContaCorren
 		if (this.saldo >= transferencia) {
 		this.saldo -= transferencia;
 		conta.saldo += transferencia;
+		} else {
+			System.out.println("Não é possível realizar a transferência");
 		}
 	}
 	

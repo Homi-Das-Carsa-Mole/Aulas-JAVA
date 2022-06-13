@@ -1,8 +1,9 @@
 
 public class LeiteQuente extends Bebida {
 
-	public LeiteQuente() {
-		super("Leite Quente", true);
+	public LeiteQuente() { //Construtor de objetos da classe "LeiteQuente". Seus objetos já são instanciados com valores pré-definidos, que puderam ser inseridos abaixo
+		//por invocar o método construtor da superclasse - "Bebida". 
+		super("Leite Quente", true);//A variável "nome" recebe "Leite Quente", e atribui-se "true" à variável "boolean aquecer", já que esta é uma bebida quente. 
 	}
 
 	@Override

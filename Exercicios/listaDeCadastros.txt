@@ -1,0 +1,2 @@
+Nome: mi, CPF:2342, Idade: 3243, Cargo: DEGUSTADOR_COBAIA, Salário: 2750.0
+Nome: oudfh, CPF:2, Idade: 3434, Cargo: DEGUSTADOR_COBAIA, Salário: 2750.0

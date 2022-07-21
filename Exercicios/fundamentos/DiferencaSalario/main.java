@@ -1,11 +1,16 @@
 package DiferencaSalario;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		System.out.println("DIFERENÇA ENTRE SALÁRIOS");
 		System.out.println("EMPRESA - AÔ COMIDA BOA");
@@ -50,19 +55,52 @@ public class main {
 			
 		}
 		
+		for (Pessoa cadastrados : listaDeFuncionariosEscrita) {
+			System.out.println("Cadastros realizados:");
+			System.out.println(cadastrados.toString());
+		}
+		
 		System.out.println("Comparação de salários:");
 		
 		if (listaDeFuncionariosEscrita.get(0).cargo.getValor() > listaDeFuncionariosEscrita.get(1).cargo.getValor()) {
-			System.out.println("O salário de " + listaDeFuncionariosEscrita.get(0).getNome() + " é R$" + listaDeFuncionariosEscrita.get(0).getCargo().getValor());
-			System.out.println("Já o salário de " + listaDeFuncionariosEscrita.get(1).getNome() + " é R$" + listaDeFuncionariosEscrita.get(1).getCargo().getValor());
+			System.out.println("O salário de " + listaDeFuncionariosEscrita.get(0).getNome() + " é de R$" + listaDeFuncionariosEscrita.get(0).getCargo().getValor());
+			System.out.println("Já o salário de " + listaDeFuncionariosEscrita.get(1).getNome() + " é de R$" + listaDeFuncionariosEscrita.get(1).getCargo().getValor());
 			System.out.println("A diferença entre os salários é de R$" + (listaDeFuncionariosEscrita.get(0).cargo.getValor() - listaDeFuncionariosEscrita.get(1).cargo.getValor()));
 		} else if (listaDeFuncionariosEscrita.get(0).cargo.getValor() < listaDeFuncionariosEscrita.get(1).cargo.getValor()){
 			System.out.println("O salário de " + listaDeFuncionariosEscrita.get(1).getNome() + " é R$" + listaDeFuncionariosEscrita.get(0).cargo.getValor());
 			System.out.println("Já o salário de " + listaDeFuncionariosEscrita.get(0).getNome() + " é R$" + listaDeFuncionariosEscrita.get(0).getCargo().getValor());
 			System.out.println("A diferença entre os salários é de R$" + (listaDeFuncionariosEscrita.get(1).cargo.getValor() - listaDeFuncionariosEscrita.get(0).cargo.getValor())) ;
 		} else {
-			System.out.println("Os salários são iguais.");
+			System.out.println("Os salários são iguais.\n----------------------------------------------------------");
 		}
+		
+		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("listaDeCadastros.txt"))) {
+
+			for (Pessoa p : listaDeFuncionariosEscrita) {
+				escrever.write(p.toString());
+			}
+
+		}
+		
+		try (BufferedReader reader = new BufferedReader(new FileReader("listaDeCadastros.txt"))) {
+			String linha;
+
+			while ((linha = reader.readLine()) != null) {
+
+				Pessoa pessoa = new Pessoa(linha);
+				listaDeFuncionariosLeitura.add(pessoa);
+
+			}
+
+		}
+		
+		for (Pessoa pessoa : listaDeFuncionariosLeitura) {
+			System.out.println("Cadastros lidos do TXT:");
+			System.out.println(pessoa);
+
+		}
+		
+		
 		
 		
 	}

@@ -1,30 +1,20 @@
 package DiferencaSalario;
 
-public class Cargo {
-	private String nome;
-	private double salario;
+public enum Cargo {
+	GERENTE(5400.0),
+	ABATEDOR_DE_MATO(2500.0),
+	DEGUSTADOR_COBAIA(2750.0),
+	VENDEDOR_DE_CURSO_SOBRE_COMO_SER_VEGETARIANO(100.0);
 	
-	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public double getSalario() {
-		return salario;
-	}
-	public void setSalario(double salario) {
-		this.salario = salario;
+	private double valor;
+
+	private Cargo(double valor) {
+		this.valor = valor;
 	}
 	
-	@Override
-	public String toString() {
-		return "Cargo [nome=" + nome + ", salario=" + salario + "]";
+	public double getValor() {
+		return valor;
 	}
-	
-	
-	
 	
 
 }

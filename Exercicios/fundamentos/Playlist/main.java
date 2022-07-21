@@ -96,9 +96,12 @@ public class main {
 						System.out.println("Gênero indisponível");
 				}
 			}
-		
-			System.out.println(musica.getGenero());
 			
+			System.out.println("Copie a URL da música e a insira agui.");
+			musica.setUrl(entrada.next());
+			
+			playlistEscrita.add(musica);
+		
 		}
 
 	}

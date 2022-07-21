@@ -1,6 +1,7 @@
+package CalculadoraDeDescontos;
 import java.util.Scanner;
 
-public class CalculadoraDeDescontos {
+public class main {
 
 	public static void main(String[] args) {
 		

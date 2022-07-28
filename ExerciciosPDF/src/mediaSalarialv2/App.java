@@ -62,7 +62,7 @@ public class App {
 			System.out.println(funcio.toString());
 		}
 
-		System.out.println("A empresa possui " + qtde + " funcionarios.");
+		System.out.println("A empresa possui " + qtde + " funcionario(s).");
 		System.out.println("A media salarial da empresa eh de R$" + salarios / qtde + ".");
 
 	}
